@@ -10,3 +10,43 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body {
+    background-color: #002244;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    color: bisque;
+}
+
+.contenedorDeTarea {
+    color: bisque;
+
+}
+
+button {
+    background-color: #FFE53B;
+    background: #667db6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+.contenedor{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 10px;
+}
+.IoMdClose{
+    font-size: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.contenedor:hover .IoMdClose{
+    opacity: 1;
+    visibility: visible;
+}
